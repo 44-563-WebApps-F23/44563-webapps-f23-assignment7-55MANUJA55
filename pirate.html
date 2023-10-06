@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>pirate web page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+<style>
+ h1
+     {
+       color:darkred;
+       font-family: cursive;
+       padding: 4px;
+       margin-bottom: 08px;
+    }
+    .menu 
+    {
+        background-color:palevioletred;
+        padding: 4px;
+        text-align: center;
+    }
+
+    .menu-item
+    {
+        font-family: monospace;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .menu-item:hover
+    {
+        background-color:darksalmon;
+        color:lightseagreen;
+        text-shadow: 1.5px;
+    }
+
+    .search 
+    {
+        background-color:aqua;
+    }
+
+    .check 
+    {
+        background-color:deeppink;
+    }
+
+    .score 
+    {
+        background-color:aquamarine;
+    }
+  
+.help
+     {
+        background-color:violet;
+     }
+</style>
+
+</head>
+<body>
+
+<div class="container-fluid">
+  <h1>Find the treasure by Manuja Prasadam</h1>
+  <div class="row menu">
+    <div class="col-sm menu-item search">Click on the locations to search for the treasure, beware the traps</div>
+        <div id="locations" class="col-sm menu-item check"> Number of locations checked is zero</div>
+        <div id="penalty" class="col-sm menu-item score"> Penalty is zero</div>
+        <div id="help" class="col-sm menu-item help" onclick="help()">Click for help</div>
+        <div id="help" class="col-sm menu-item help">Help report</div>
+  </div>
+  <br>
+</div>
+
+
+</body>
+</html>
