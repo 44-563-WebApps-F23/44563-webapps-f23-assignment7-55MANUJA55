@@ -58,6 +58,9 @@
     <button class="btn btn-warning" onclick="addFront()">Add front</button>
     <button class="btn btn-info" onclick="remove()">Remove</button>
     </div>
+    <div>
+        <button class="btn btn-primary" onclick="swap()">swap</button>
+    </div>
 </body>
 <script>
 	function makeNewDiv(){
@@ -93,6 +96,19 @@
                 
                 
             }
+        }
+        function swap()
+        {
+        var mergerItems = document.getElementsByClassName("merger");
+        let element = document.createElement("div");
+        let container = document.getElementById('target')
+        var l= mergerItems.length;
+        var random = Math.floor(Math.random()*(l));
+        console.log(random);
+		element.innerHTML = mergerItems[random].textContent;
+        element.className = "merger"
+        mergerItems[random].remove()
+        container.insertBefore(element,mergerItems[0])
         }
 
 </script>
