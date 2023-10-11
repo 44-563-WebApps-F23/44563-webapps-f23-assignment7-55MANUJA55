@@ -102,19 +102,6 @@
                     }
                 }, 8000);
             }
-            function swap()
-        {
-        var queueItems = document.getElementsByClassName("delayq");
-        let element = document.createElement("div");
-        let containernew = document.getElementById('target')
-        var l= queueItems.length;
-        var random = Math.floor(Math.random()*(l));
-        console.log(random);
-		element.innerHTML = queueItems[random].textContent;
-        element.className = "delayq"
-        queueItems[random].remove()
-        containernew.insertBefore(element,queueItems[0])
-        }
   </script>
 
 </body>
