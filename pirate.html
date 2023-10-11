@@ -70,6 +70,7 @@
             <div id="penalty" class="col-sm menu-item score"> Penalty is zero</div>
             <div id="help" class="col-sm menu-item help" onclick="help()">Click for help</div>
             <div id="help" class="col-sm menu-item help">Help report</div>
+            <button onclick="restart()" type="submit" class="btn btn-warning">random</button>
         </div>
         <br>
     </div>
@@ -177,6 +178,23 @@
 
         penalty = penality + 2;
         document.getElementById("penalty").innerHTML = "Penalty is " + penalty
+    }
+    function restart() 
+    {
+        penalty=0;
+        checkCount=0;
+        document.getElementById("locations").innerHTML = "Number of locations checked is "+ checkCount
+        document.getElementById("penalty").innerHTML = "penalty is "+ penalty
+        treasureLocation = Math.floor(Math.random() * 25)
+        trapLocation = Math.floor(Math.random() * 25)
+        
+        for(let m=0;m<25;m++){
+            docume.getElementById(ids[i]).src="treasure.jpg"
+
+        }
+            
+       
+        
     }
 </script>
 
